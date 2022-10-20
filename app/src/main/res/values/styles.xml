@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="BottomAppBar" parent="Widget.MaterialComponents.BottomAppBar.Colored">
+        <item name="backgroundTint">@color/primary</item>
+    </style>
+
+    <style name="FAB" parent="Widget.MaterialComponents.FloatingActionButton">
+        <item name="backgroundTint">@color/secondary</item>
+    </style>
+
+    <style name="FABShape" parent="ShapeAppearance.MaterialComponents.SmallComponent">
+        <item name="cornerSize">30%</item>
+    </style>
+
+    <color name="primary">#f8bbd0</color>
+    <color name="primary_dark">#c48b9f</color>
+    <color name="primary_light">#ffeeff</color>
+    <color name="secondary">#ffeeff</color>
+</resources>

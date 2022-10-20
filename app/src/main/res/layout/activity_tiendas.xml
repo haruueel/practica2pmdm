@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TiendasActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_margin="@dimen/super_text_padding"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <TextView
+                android:id="@+id/tvZara"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:text="@string/zara"
+                android:textSize="@dimen/default_store_title_size"
+                />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_store"
+                app:tint="@color/primary_dark"
+                android:paddingLeft="@dimen/default_icon_padding"
+                app:layout_constraintStart_toEndOf="@id/tvZara"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toTopOf="@id/tvZaraDesc"
+                />
+
+            <TextView
+                android:id="@+id/tvZaraDesc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvZara"
+                android:textSize="@dimen/default_store_desc_size"
+                android:text="@string/tiendaDeRopa"
+                />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_margin="@dimen/super_text_padding"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <TextView
+                android:id="@+id/tvBershka"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:text="@string/bershka"
+                android:textSize="@dimen/default_store_title_size"
+                />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_store"
+                app:tint="@color/primary_dark"
+                android:paddingLeft="@dimen/default_icon_padding"
+                app:layout_constraintStart_toEndOf="@id/tvBershka"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toTopOf="@id/tvBershkaDesc"
+                />
+
+            <TextView
+                android:id="@+id/tvBershkaDesc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvBershka"
+                android:textSize="@dimen/default_store_desc_size"
+                android:text="@string/tiendaDeRopa"
+                />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_margin="@dimen/super_text_padding"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <TextView
+                android:id="@+id/tvSprinter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:text="@string/sprinter"
+                android:textSize="@dimen/default_store_title_size"
+                />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_sports"
+                app:tint="@color/primary_dark"
+                android:paddingLeft="@dimen/default_icon_padding"
+                app:layout_constraintStart_toEndOf="@id/tvSprinter"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toTopOf="@id/tvsprinterDesc"
+                />
+
+            <TextView
+                android:id="@+id/tvsprinterDesc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvSprinter"
+                android:textSize="@dimen/default_store_desc_size"
+                android:text="@string/tiendaDeRopaDeportiva"
+                />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_margin="@dimen/super_text_padding"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <TextView
+                android:id="@+id/tvHollyster"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:text="@string/hollyster"
+                android:textSize="@dimen/default_store_title_size"
+                />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_store"
+                app:tint="@color/primary_dark"
+                android:paddingLeft="@dimen/default_icon_padding"
+                app:layout_constraintStart_toEndOf="@id/tvHollyster"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toTopOf="@id/tvHollysterDesc"
+                />
+
+            <TextView
+                android:id="@+id/tvHollysterDesc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvHollyster"
+                android:textSize="@dimen/default_store_desc_size"
+                android:text="@string/tiendaDeRopaCara"
+                />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_margin="@dimen/super_text_padding"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <TextView
+                android:id="@+id/tv100Montaditos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:text="@string/cienmontaditos"
+                android:textSize="@dimen/default_store_title_size"
+                />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_restaurant"
+                app:tint="@color/primary_dark"
+                android:paddingLeft="@dimen/default_icon_padding"
+                app:layout_constraintStart_toEndOf="@id/tv100Montaditos"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toTopOf="@id/tv100MontaditosDesc"
+                />
+
+            <TextView
+                android:id="@+id/tv100MontaditosDesc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv100Montaditos"
+                android:textSize="@dimen/default_store_desc_size"
+                android:text="@string/restaurante"
+                />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_margin="@dimen/super_text_padding"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <TextView
+                android:id="@+id/tvVips"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:text="@string/vips"
+                android:textSize="@dimen/default_store_title_size"
+                />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_restaurant"
+                app:tint="@color/primary_dark"
+                android:paddingLeft="@dimen/default_icon_padding"
+                app:layout_constraintStart_toEndOf="@id/tvVips"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toTopOf="@id/tvVipsDesc"
+                />
+
+            <TextView
+                android:id="@+id/tvVipsDesc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvVips"
+                android:textSize="@dimen/default_store_desc_size"
+                android:text="@string/restaurante"
+                />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_margin="@dimen/super_text_padding"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <TextView
+                android:id="@+id/tvFnac"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:text="@string/fnac"
+                android:textSize="@dimen/default_store_title_size"
+                />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_store"
+                app:tint="@color/primary_dark"
+                android:paddingLeft="@dimen/default_icon_padding"
+                app:layout_constraintStart_toEndOf="@id/tvFnac"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toTopOf="@id/tvFnacDesc"
+                />
+
+            <TextView
+                android:id="@+id/tvFnacDesc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvFnac"
+                android:textSize="@dimen/default_store_desc_size"
+                android:text="@string/tiendaMultiproducto"
+                />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

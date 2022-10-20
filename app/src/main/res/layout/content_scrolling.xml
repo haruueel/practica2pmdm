@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".ScrollingActivity"
+    tools:showIn="@layout/activity_scrolling">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/card1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/default_card_margin"
+            android:layout_marginEnd="@dimen/default_card_margin"
+            android:layout_marginStart="@dimen/default_card_margin"
+            android:layout_marginBottom="@dimen/default_card_margin"
+            app:cardElevation="@dimen/default_card_elevation">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                
+                <ImageView
+                    android:id="@+id/img1"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/img_dimension"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"/>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="@dimen/default_cc_info_width"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/default_card_margin"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:cardCornerRadius="10dp"
+                    app:layout_constraintStart_toStartOf="parent">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/mn4title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            android:text="@string/mn4title"
+                            android:paddingStart="@dimen/default_text_padding"
+                            android:paddingEnd="@dimen/default_text_padding"
+                            android:paddingTop="@dimen/mini_text_padding"
+                            style="@style/TextAppearance.AppCompat.Widget.TextView.SpinnerItem"
+                            />
+
+                        <TextView
+                            android:id="@+id/mn4address"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/mn4title"
+                            android:text="@string/mn4address"
+                            android:textColor="@color/gray"
+                            android:paddingBottom="@dimen/mini_text_padding"
+                            android:paddingStart="@dimen/default_text_padding"
+                            android:paddingEnd="@dimen/default_text_padding"/>
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="10dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:layout_margin="@dimen/default_card_margin">
+
+                    <TextView
+                        android:id="@+id/mn4storenumber"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/mn4shops"
+                        android:textSize="@dimen/default_shopList_number_size"
+                        android:paddingTop="@dimen/mini_text_padding"
+                        android:paddingBottom="@dimen/mini_text_padding"
+                        android:paddingStart="@dimen/super_text_padding"
+                        android:paddingEnd="@dimen/super_text_padding" />
+                </androidx.cardview.widget.CardView>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/card2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/default_card_margin"
+            android:layout_marginEnd="@dimen/default_card_margin"
+            android:layout_marginStart="@dimen/default_card_margin"
+            android:layout_marginBottom="@dimen/default_card_margin"
+            app:cardElevation="@dimen/default_card_elevation">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/img2"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/img_dimension"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"/>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="@dimen/default_cc_info_width"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/default_card_margin"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:cardCornerRadius="10dp"
+                    app:layout_constraintStart_toStartOf="parent">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/bonaireTitle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            android:text="@string/mn4title"
+                            android:paddingStart="@dimen/default_text_padding"
+                            android:paddingEnd="@dimen/default_text_padding"
+                            android:paddingTop="@dimen/mini_text_padding"
+                            style="@style/TextAppearance.AppCompat.Widget.TextView.SpinnerItem"
+                            />
+
+                        <TextView
+                            android:id="@+id/bonaireAddress"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/bonaireTitle"
+                            android:text="@string/mn4address"
+                            android:textColor="@color/gray"
+                            android:paddingBottom="@dimen/mini_text_padding"
+                            android:paddingStart="@dimen/default_text_padding"
+                            android:paddingEnd="@dimen/default_text_padding"/>
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="10dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:layout_margin="@dimen/default_card_margin">
+
+                    <TextView
+                        android:id="@+id/bonaireStorenumber"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/mn4shops"
+                        android:textSize="@dimen/default_shopList_number_size"
+                        android:paddingTop="@dimen/mini_text_padding"
+                        android:paddingBottom="@dimen/mini_text_padding"
+                        android:paddingStart="@dimen/super_text_padding"
+                        android:paddingEnd="@dimen/super_text_padding" />
+                </androidx.cardview.widget.CardView>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/card3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/default_card_margin"
+            android:layout_marginEnd="@dimen/default_card_margin"
+            android:layout_marginStart="@dimen/default_card_margin"
+            android:layout_marginBottom="@dimen/default_card_margin"
+            app:cardElevation="@dimen/default_card_elevation">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/img3"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/img_dimension"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"/>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="@dimen/default_cc_info_width"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/default_card_margin"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:cardCornerRadius="10dp"
+                    app:layout_constraintStart_toStartOf="parent">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/elsalerTitle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            android:text="@string/mn4title"
+                            android:paddingStart="@dimen/default_text_padding"
+                            android:paddingEnd="@dimen/default_text_padding"
+                            android:paddingTop="@dimen/mini_text_padding"
+                            style="@style/TextAppearance.AppCompat.Widget.TextView.SpinnerItem"
+                            />
+
+                        <TextView
+                            android:id="@+id/elsalerAddress"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/elsalerTitle"
+                            android:text="@string/mn4address"
+                            android:textColor="@color/gray"
+                            android:paddingBottom="@dimen/mini_text_padding"
+                            android:paddingStart="@dimen/default_text_padding"
+                            android:paddingEnd="@dimen/default_text_padding"/>
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="10dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:layout_margin="@dimen/default_card_margin">
+
+                    <TextView
+                        android:id="@+id/elsalerStorenumber"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/mn4shops"
+                        android:textSize="@dimen/default_shopList_number_size"
+                        android:paddingTop="@dimen/mini_text_padding"
+                        android:paddingBottom="@dimen/mini_text_padding"
+                        android:paddingStart="@dimen/super_text_padding"
+                        android:paddingEnd="@dimen/super_text_padding" />
+                </androidx.cardview.widget.CardView>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/card4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/default_card_margin"
+            android:layout_marginEnd="@dimen/default_card_margin"
+            android:layout_marginStart="@dimen/default_card_margin"
+            android:layout_marginBottom="@dimen/default_card_margin"
+            app:cardElevation="@dimen/default_card_elevation">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/img4"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/img_dimension"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"/>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="@dimen/default_cc_info_width"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/default_card_margin"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:cardCornerRadius="10dp"
+                    app:layout_constraintStart_toStartOf="parent">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/arenaTitle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            android:text="@string/mn4title"
+                            android:paddingStart="@dimen/default_text_padding"
+                            android:paddingEnd="@dimen/default_text_padding"
+                            android:paddingTop="@dimen/mini_text_padding"
+                            style="@style/TextAppearance.AppCompat.Widget.TextView.SpinnerItem"
+                            />
+
+                        <TextView
+                            android:id="@+id/arenaAddress"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/arenaTitle"
+                            android:text="@string/mn4address"
+                            android:textColor="@color/gray"
+                            android:paddingBottom="@dimen/mini_text_padding"
+                            android:paddingStart="@dimen/default_text_padding"
+                            android:paddingEnd="@dimen/default_text_padding"/>
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="10dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:layout_margin="@dimen/default_card_margin">
+
+                    <TextView
+                        android:id="@+id/arenaStorenumber"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/mn4shops"
+                        android:textSize="@dimen/default_shopList_number_size"
+                        android:paddingTop="@dimen/mini_text_padding"
+                        android:paddingBottom="@dimen/mini_text_padding"
+                        android:paddingStart="@dimen/super_text_padding"
+                        android:paddingEnd="@dimen/super_text_padding" />
+                </androidx.cardview.widget.CardView>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+        
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>
